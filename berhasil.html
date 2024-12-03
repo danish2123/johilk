@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #ffafbd, #ffc3a0, #f7ff00, #0072ff, #00c6ff, #0072ff);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .message {
+            max-width: 400px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .message h1 {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 10px;
+            background: -webkit-linear-gradient(#0072ff, #00c6ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .message p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .message a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            color: #ffffff;
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .message a:hover {
+            background: linear-gradient(135deg, #ff4b2b, #ff416c);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<div class="message">
+    <h1>Terima Kasih!</h1>
+    <p>Pesan Anda telah berhasil dikirim.</p>
+    <!-- Mengubah tautan ke file "danish.html" -->
+    <a href="danish.html">Kembali ke Formulir</a>
+</div>
+
+</body>
+</html>
